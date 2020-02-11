@@ -17,7 +17,8 @@
     "prepublishOnly": "rm -rf dist && yarn build",
     "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
     "deploy": "echo TODO - should build and deploy styleguidist",
-    "release": "echo TODO - should build an release git package"
+    "release": "echo TODO - should build an release git package",
+    "test": "echo"
   },
   "author": "Raman Maan",
   "license": "ISC",
