@@ -10,4 +10,6 @@ module.exports = {
       ],
     },
   },
+  title: 'React Skeleton Components Library',
+  styleguideDir: 'dist-docs',
 };
