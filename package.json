@@ -1,6 +1,6 @@
 {
   "name": "@ramanmaan/react-skeleton",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A React UI kit for building skeleton states",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
