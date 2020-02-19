@@ -1,7 +1,10 @@
+The `Base` can be used to create your own custom skeleton components in any shape/form. All of the Skeleton atoms included in this library are built off of the `Base` component.
+
 ##### Example - Custom Skeleton Component
 
 ```jsx
 import styled from 'styled-components';
+import Base from './Base';
 
 const Heart = styled(Base)`
   position: relative;
@@ -30,10 +33,13 @@ const Heart = styled(Base)`
 <Heart />;
 ```
 
+You can also specify custom colors for the shimmer/background to create a custom gradient.
+
 ##### Example - Custom Gradient
 
 ```jsx
 import styled from 'styled-components';
+import Base from './Base';
 
 const Heart = styled(Base)`
   position: relative;
@@ -59,5 +65,5 @@ const Heart = styled(Base)`
   }
 `;
 
-<Heart use="custom" colour="#ff4747" shimmerColour="#ff8181" />;
+<Heart use="custom" color="#ff4747" shimmerColor="#ff8181" />;
 ```

@@ -14,8 +14,8 @@ const Base = styled.div`
     min-width: ${size || width};
   `}
   border-radius: ${({ radius }) => radius};
-  ${({ use, translucent, colour, shimmerColour }) =>
-    getBackground(use, translucent, { colour, shimmerColour })};
+  ${({ use, translucent, color, shimmerColor }) =>
+    getBackground(use, translucent, { color, shimmerColor })};
 `;
 
 Base.defaultProps = {
@@ -23,11 +23,11 @@ Base.defaultProps = {
 };
 
 Base.propTypes = {
-  colour: PropTypes.string,
+  color: PropTypes.string,
   height: PropTypes.string,
   radius: PropTypes.string,
-  shimmerColour: PropTypes.string,
-  size: PropTypes.number,
+  shimmerColor: PropTypes.string,
+  size: PropTypes.string,
   translucent: PropTypes.bool,
   use: PropTypes.oneOf(useOptions).isRequired,
   width: PropTypes.string,

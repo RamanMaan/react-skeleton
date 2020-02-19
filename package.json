@@ -1,24 +1,24 @@
 {
-  "name": "@RamanMaan/react-skeleton",
-  "version": "1.0.0",
+  "name": "@ramanmaan/react-skeleton",
+  "version": "1.0.1",
   "description": "A React UI kit for building skeleton states",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "files": [
     "dist"
   ],
+  "repository": "git://github.com/ramanmaan/react-skeleton.git",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "start": "styleguidist server",
     "build": "rollup -c",
+    "build:all": "yarn build:docs && yarn build",
     "build:docs": "styleguidist build",
     "prepublishOnly": "rm -rf dist && yarn build",
     "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-    "deploy": "echo TODO - should build and deploy styleguidist",
-    "release": "echo TODO - should build an release git package",
-    "test": "echo"
+    "test": "echo Success"
   },
   "author": "Raman Maan",
   "license": "ISC",
@@ -30,6 +30,7 @@
     "@rollup/plugin-node-resolve": "^7.1.1",
     "babel-loader": "^8.0.6",
     "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-styled-components": "^1.10.7",
     "eslint": "^6.7.2",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.7.0",

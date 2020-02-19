@@ -1,7 +1,7 @@
-import Base from 'components/Base';
-import SkeletonBlock from 'components/SkeletonBlock';
-import SkeletonCircle from 'components/SkeletonCircle';
-import SkeletonText from 'components/SkeletonText';
+import Base from 'components/Base/Base';
+import SkeletonBlock from 'components/SkeletonBlock/SkeletonBlock';
+import SkeletonCircle from 'components/SkeletonCircle/SkeletonCircle';
+import SkeletonText from 'components/SkeletonText/SkeletonText';
 
 export default {
   Base,

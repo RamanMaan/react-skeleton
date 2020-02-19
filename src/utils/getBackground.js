@@ -1,12 +1,12 @@
-import { colourMappings } from 'constants/colourMappings';
+import { colorMappings } from 'constants/colorMappings';
 import { background } from 'styles/background';
 
-export const getBackground = (use, translucent, customColours) => {
-  const { colour, shimmerColour } = colourMappings[use] || customColours;
+export const getBackground = (use, translucent, customColors) => {
+  const { color, shimmerColor } = colorMappings[use] || customColors;
 
   return background({
-    colour,
-    shimmerColour,
+    color,
+    shimmerColor,
     translucent,
     use,
   });
